@@ -534,6 +534,13 @@ grant codeBase "file:/${basedir}/${test.script.dir}/basic/JDK-8158467.js" {
       <sysproperty key="optimistic.override" value="${optimistic}"/>
       <classpath>
           <pathelement path="${run.test.classpath}"/>
+          <pathelement path="${build.dir}/dist/nashorn.jar"/>
+          <pathelement path="${build.dir}/dist/jjs.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-7.3.1.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-analysis-7.3.1.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-commons-7.3.1.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-tree-7.3.1.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-util-7.3.1.jar"/>
       </classpath>
     </testng>
   </target>
@@ -557,6 +564,13 @@ grant codeBase "file:/${basedir}/${test.script.dir}/basic/JDK-8158467.js" {
       <sysproperty key="test.js.excludes.file" value="${exclude.list}"/>
       <classpath>
           <pathelement path="${run.test.classpath}"/>
+          <pathelement path="${build.dir}/dist/nashorn.jar"/>
+          <pathelement path="${build.dir}/dist/jjs.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-7.3.1.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-analysis-7.3.1.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-commons-7.3.1.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-tree-7.3.1.jar"/>
+          <pathelement path="${build.dir}/dependencies/asm-util-7.3.1.jar"/>
       </classpath>
     </testng>
   </target>
